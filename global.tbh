@@ -1,0 +1,7 @@
+'DEFINES-------------------------------------------------------------
+
+#define DHCP_DEBUG_PRINT 1 
+
+include "sock\trunk\sock.tbh"
+include "dhcp\trunk\dhcp.tbh"
+include "wln\trunk\wln.tbh"

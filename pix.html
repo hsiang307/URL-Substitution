@@ -1,0 +1,15 @@
+<?
+
+dim x as byte
+dim s as string
+
+romfile.open("source.bmp")
+
+do
+	x=sock.txfree
+	s=romfile.getdata(x)
+	sock.setdata(s)
+	sock.send
+	loop while len(s)=x
+
+?>
